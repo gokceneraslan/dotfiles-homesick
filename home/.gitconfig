@@ -1,0 +1,16 @@
+[user]
+	name = Gökçen Eraslan
+	email = gokcen.eraslan@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[alias]
+    st = status
+    co = checkout
+    ci = commit
+    br = branch
+    di = diff
+    dic = diff --cached
+[push]
+	default = simple
