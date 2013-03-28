@@ -47,7 +47,9 @@ zstyle ':completion:*' special-dirs true
 export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 
 # fancy dircolors
-eval `dircolors ~/.dircolors.molokai`
+if [ -f ~/.dir_colors ]; then
+eval `dircolors ~/.dir_colors`
+fi
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
@@ -56,10 +58,6 @@ alias diff='colordiff'
 alias wget='wget -c'
 
 export EDITOR=vim
-
-# Solarized workaround
-#alias tmux="TERM=screen-256color-bce tmux"
-#export TERM=xterm-256color
 export TERM=screen-256color-bce
 
 # Start tmux in every zsh shell
