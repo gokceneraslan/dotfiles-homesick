@@ -110,4 +110,5 @@ export PATH=/usr/lib/ccache:$PATH
 
 # correctall considered harmful
 setopt nocorrectall
+setopt extendedglob
 autoload zmv
